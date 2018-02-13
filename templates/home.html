@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js'></script>
+</head>
+
+<body>
+    <center>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <div style="width:80%">
+            <form action="" method="post">
+                <div class="panel panel-info" style="width:50%">
+                        {% csrf_token %}
+                    <div class="panel-heading">
+                        Home...
+                    </div>
+                    <div class="panel-body">
+                        <h4>Welcome...!!!</h4 onClick="account_home">
+                        <h4>{{name}}</h4>
+                        <!--<input type="submit" onclick="account_logout" value="Logout" style="float:right" class="btn"/>-->
+                        <a href="/account/logout/" value="Logout" style="float:right">Log out</a>
+                        <br>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </center>
+</body>
+
+</html>
